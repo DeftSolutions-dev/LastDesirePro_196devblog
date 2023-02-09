@@ -650,6 +650,4 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
               </ul>
             </div>
           </div>
-        </ul>
-      </div>
 </details>
