@@ -1,6 +1,11 @@
 # LastDesirePro_196devblog
 LastDesirePro - Rust cheat the 196-198 devblog (Pirate). 
+<div align="center">
 
+![ISSUES](https://img.shields.io/github/issues/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
+![FORKS](https://img.shields.io/github/forks/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
+![STARS](https://img.shields.io/github/stars/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
+![LICENCE](https://img.shields.io/github/license/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
 Описание в процессе.
 
 ### Features
