@@ -13,21 +13,21 @@ namespace LastDesirePro.Menu.CFG
 
         /*---------------------- Visual Players ------------------------ */
         [Save] public static bool[] _players = new bool[] {
-        false,//Players         0
-        false,//Дистанция       1
-        false,//Предметы       2
-        false,//Спящие         3
-        false,//Кости          4
-        false,//Бар хп          5
-        false,//Боксы           6
-        false,//Чамсы          7 
-        false,//Задний фон     8
-        false,//Ремень         9
-        false,//Состояние      10
-        false,//кОЛИЧЕСТВО     11 
-        false,//VisibleCheck    12
-        false,//Corpses    13
-        false,//ignoreLocalPlayer    14
+        false,//Players                 0
+        false,//Дистанция               1
+        false,//Предметы                2
+        false,//Спящие                  3
+        false,//Кости                   4
+        false,//Бар хп                  5
+        false,//Боксы                   6
+        false,//Чамсы                   7 
+        false,//Задний фон              8
+        false,//Ремень                  9
+        false,//Состояние               10
+        false,//кОЛИЧЕСТВО              11 
+        false,//VisibleCheck            12
+        false,//Corpses                 13
+        false,//ignoreLocalPlayer       14
         };
         [Save] public static float _chams = 0;
         [Save] public static float _dis = 500;
@@ -49,13 +49,13 @@ namespace LastDesirePro.Menu.CFG
 
         [Save] public static bool[] _animals = new bool[]
         {
-            false, //Stag
-            false, //Wolf
-            false, //Horse
-            false, //Chicken
-            false, //Bear
-            false, //Boar
-            false //Задний фон 6
+            false,                                             //Stag
+            false,                                             //Wolf
+            false,                                             //Horse
+            false,                                             //Chicken
+            false,                                             //Bear
+            false,                                             //Boar
+            false                                              //Задний фон 6
         }; 
         [Save] public static float _animalDist = 300f;
         /*---------------------- Visual Animals Colors ------------------------ */
@@ -77,11 +77,11 @@ namespace LastDesirePro.Menu.CFG
         [Save]
         public static bool[] _resource = new bool[]
         {
-            false, //Stone
-            false, //Metal
-            false, //Sulfur 
-            false, //Marker ore 
-            false //Fon  
+            false,                                             //Stone
+            false,                                             //Metal
+            false,                                             //Sulfur 
+            false,                                             //Marker ore 
+            false                                              //Fon  
         };
         [Save] public static float _resourceDist = 300f;
         /*---------------------- Visual Resource Colors ------------------------ */
@@ -100,15 +100,15 @@ namespace LastDesirePro.Menu.CFG
         [Save]
         public static bool[] _collectible = new bool[]
         {
-            false, //stone
-            false, //metal
-            false, //sulfur 
-            false, //hemp
-            false, //mushroom  
-            false, //wood  
-            false, //pumpkin  
-            false, //corn  
-            false //fon  
+            false,                                             //stone
+            false,                                             //metal
+            false,                                             //sulfur 
+            false,                                             //hemp
+            false,                                             //mushroom  
+            false,                                             //wood  
+            false,                                             //pumpkin  
+            false,                                             //corn  
+            false                                              //fon  
         };
         [Save] public static float _collectibleDist = 300f;
         /*---------------------- Visual Resource Collectible Colors ------------------------ */
@@ -334,20 +334,20 @@ namespace LastDesirePro.Menu.CFG
         [Save]
         public static bool[] _Storage = new bool[]
         {
-            false, //Crate tools                0
-            false, //Crate small            1
-            false, //Crate normal         2
-            false, //Crate normal food             3
-            false, //Crate normal medical                4
-            false, //Crate mine            5
-            false, //Crate military         6
-            false, //Crate elite             7
-            false, //Barrel                8
-            false, //Barrel fire            9
-            false, //Oil barrel         10
-            false, //Recycler             11
-            false, //fon                 12
-            false, //SupplyDrop                 12
+            false, //Crate tools                 0
+            false, //Crate small                 1
+            false, //Crate normal                2
+            false, //Crate normal food           3
+            false, //Crate normal medical        4
+            false, //Crate mine                  5
+            false, //Crate military              6
+            false, //Crate elite                 7
+            false, //Barrel                      8
+            false, //Barrel fire                 9
+            false, //Oil barrel                  10
+            false, //Recycler                    11
+            false, //fon                         12
+            false, //SupplyDrop                  13
         };
         [Save] public static float _StorageDist = 150f;
         /*---------------------- Visual Home Trap ------------------------ */
@@ -376,14 +376,14 @@ namespace LastDesirePro.Menu.CFG
         public static bool[] _raid = new bool[]
    {
             false, //         0
-            false, //     1
-            false, //  2
-            false, //             3
+            false, //         1
+            false, //         2
+            false, //         3
             false, //         4
-            false, //    5
-            false, //    6
-            false, //   7
-            false //        8
+            false, //         5
+            false, //         6
+            false, //         7
+            false //          8
    };
         [Save] public static float _radiusFonRaid = 1f;
         [Save] public static Color32 _colorFonRaid = new Color32(0, 0, 0, 255);
