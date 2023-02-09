@@ -169,7 +169,6 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 
               </ul>
             </div>
-          </div>
           <div class="product-feature-list">
             <div>
               <p>Aim Bot</p>
