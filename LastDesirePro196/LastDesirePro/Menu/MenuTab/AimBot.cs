@@ -57,7 +57,6 @@ namespace LastDesirePro.Menu.MenuTab
             tab = Tab(23, 60, 133, 100, tb, tab, 150);
             switch (tab)
             { 
-
                 case 0:
                     {
                         GUIContent[] boxInt = { };
@@ -65,7 +64,7 @@ namespace LastDesirePro.Menu.MenuTab
                         {
                             GUILayout.BeginVertical(GUILayout.Width(180)); 
                             GUILayout.Space(5f);
-                            Toggle("Aim",ref _aim);
+                            Toggle("Aim", ref _aim);
                             if (_aim)
                             {
                                 Toggle("Aim Fov", ref _aimFov, 17, _colorFov, true, 89);
@@ -92,10 +91,7 @@ namespace LastDesirePro.Menu.MenuTab
                                 _aimkey = Bind(_aimkey, "Aim Key: ", ref key);
                             }
                             GUILayout.Space(5f);
-
-
                             GUILayout.EndVertical();
-
                         });
                         break;
                     }
@@ -113,8 +109,6 @@ namespace LastDesirePro.Menu.MenuTab
                                 Slider(0f, 380f, ref _silent, 200, $"{string.Format("{0}", (int)_silent)}.");
                             }
                             Toggle("Magic Bullet HeliCopter", ref _silentHeliPredict, 17);
-
-
                             GUILayout.EndVertical();
                         });
                         break;
@@ -175,9 +169,7 @@ namespace LastDesirePro.Menu.MenuTab
                             GUILayout.Space(5f); 
                             Toggle("HitBox Helicopter", ref _hitBoxHelicopter);
                             if (_hitBoxHelicopter)
-                            {
                                 Slider(0f, 40f, ref _hitBoxHelicopterRadius, 200, $"{string.Format("{0:0.#}", (float)_hitBoxHelicopterRadius)} m.");
-                            } 
                             Toggle("HitBox Players", ref _hitBoxPlayer);
                             if (_hitBoxPlayer)
                             {
