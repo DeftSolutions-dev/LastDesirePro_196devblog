@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B23BEFD-7076-4054-B5FB-390F3386FD39}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LastDesirePro</RootNamespace>
+    <AssemblyName>LastDesirePro</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\Component.cs" />
+    <Compile Include="Attributes\Replacement.cs" />
+    <Compile Include="Attributes\Save.cs" />
+    <Compile Include="ColorPicker\GUIColorPicker.cs" />
+    <Compile Include="Main\AimBot\AimBot.cs" />
+    <Compile Include="Main\Misc\Misc.cs" />
+    <Compile Include="Main\Automatic\Automatic.cs" />
+    <Compile Include="Main\Objects\AutoTurrets.cs" />
+    <Compile Include="Main\Objects\Bear.cs" />
+    <Compile Include="Main\Objects\Bradley.cs" />
+    <Compile Include="Main\Objects\Building.cs" />
+    <Compile Include="Main\Objects\Collectible.cs" />
+    <Compile Include="Main\Objects\Container.cs" />
+    <Compile Include="Main\Objects\Container1.cs" />
+    <Compile Include="Main\Objects\Flame.cs" />
+    <Compile Include="Main\Objects\Helicopter.cs" />
+    <Compile Include="Main\Objects\Mine.cs" />
+    <Compile Include="Main\Objects\ObjectsCheck.cs" />
+    <Compile Include="Main\Objects\ObjectsCheck.Storage.cs" />
+    <Compile Include="Main\Objects\ObjectsCheck.Supply.cs" />
+    <Compile Include="Main\Objects\OreMarker.cs" />
+    <Compile Include="Main\Objects\Resource.cs" />
+    <Compile Include="Main\Objects\Stash.cs" />
+    <Compile Include="Main\Objects\Trap.cs" />
+    <Compile Include="Main\Radar 2D\Radar.cs" />
+    <Compile Include="Main\Visuals\Animals.cs" />
+    <Compile Include="Main\Visuals\DrawOnlyPlayers.cs" />
+    <Compile Include="Main\Visuals\FullDrawing.cs" />
+    <Compile Include="Main\Visuals\Home.cs" />
+    <Compile Include="Main\Visuals\Others.cs" />
+    <Compile Include="Main\Visuals\Players.cs" />
+    <Compile Include="Main\Visuals\Resources.cs" />
+    <Compile Include="Menu\CFG\AimBotConfig.cs" />
+    <Compile Include="Menu\CFG\MiscConfig.cs" />
+    <Compile Include="Menu\CFG\AutomaticConfig.cs" />
+    <Compile Include="Menu\CFG\RadarConfig.cs" />
+    <Compile Include="Menu\CFG\VisuаlCоnfig.cs" />
+    <Compile Include="Menu\MainMenu.cs" />
+    <Compile Include="DrawMenu\AssetsLoad.cs" />
+    <Compile Include="DrawMenu\Convertor.cs" />
+    <Compile Include="DrawMenu\Drawing.cs" />
+    <Compile Include="DrawMenu\MenuFix.cs" />
+    <Compile Include="DrawMenu\Prefab.cs" />
+    <Compile Include="DrawMenu\Vectors.cs" />
+    <Compile Include="Inj.cs" />
+    <Compile Include="Menu\ConfigManager.cs" />
+    <Compile Include="Menu\MenuTab\Misc.cs" />
+    <Compile Include="Menu\MenuTab\Automatic.cs" />
+    <Compile Include="Menu\MenuTab\AimBot.cs" />
+    <Compile Include="Menu\MenuTab\MainTab.cs" />
+    <Compile Include="Menu\MenuTab\Other.cs" />
+    <Compile Include="Menu\MenuTab\Radar.cs" />
+    <Compile Include="Menu\MenuTab\Visual.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Replacement\ReplacementManager.cs" />
+    <Compile Include="Replacement\ReplacementUtilities.cs" />
+    <Compile Include="Replacement\ReplacementWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Input, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.System, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Unity, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\client 196\RustClient_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Rust196\RustClient_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\killsound.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
