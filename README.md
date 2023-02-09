@@ -1,8 +1,7 @@
 # LastDesirePro_196devblog
 <div align="center">
   
-![image](https://user-images.githubusercontent.com/59990384/217893330-cca740e6-b7fa-48af-92b8-68a2f5892874.png)
-
+![image](https://user-images.githubusercontent.com/59990384/217894647-65a9c489-69b5-4656-a418-870fd7bd8a8b.png)
 LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 <div align="center">
   
