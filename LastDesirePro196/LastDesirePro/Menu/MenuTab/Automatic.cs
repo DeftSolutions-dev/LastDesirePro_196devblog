@@ -21,14 +21,12 @@ namespace LastDesirePro.Menu.MenuTab
             tab = Tab(23, 60, 133, 100, tb, tab, 150);
             switch (tab)
             { 
-
                 case 0:
                     {
                         ScrollViewMenu(new Rect(15, 85, 750, 415), ref _AutoFarm, () =>
                         {
                             GUILayout.BeginVertical(GUILayout.Width(180)); 
                             GUILayout.Space(5f);
-
                             Toggle("AutoFarm Tree Marker", ref _farmTreeBonus, 16);
                             Toggle("AutoFarm Ore Bonus", ref _farmOreBonus, 16);
                             Toggle("Farm Bot [Beta]", ref _farmBot[0], 16);
@@ -42,7 +40,6 @@ namespace LastDesirePro.Menu.MenuTab
                                 Toggle("OnLadder", ref _farmBot[5], 16); 
                             }
                             GUILayout.EndVertical();
-
                         });
                         break;
                     }
@@ -86,7 +83,6 @@ namespace LastDesirePro.Menu.MenuTab
                         {
                             GUILayout.BeginVertical(GUILayout.Width(180));
                             GUILayout.Space(5f); 
-
                             Toggle("AutoPickup Hemp", ref _autoPickup[0], 16);
                             Toggle("AutoPickup Stone", ref _autoPickup[1], 16);
                             Toggle("AutoPickup Metal", ref _autoPickup[2], 16);
@@ -97,9 +93,7 @@ namespace LastDesirePro.Menu.MenuTab
                             Toggle("AutoPickup Mushroom", ref _autoPickup[7], 16);
                             Toggle("AutoPickup Dropped Item", ref _autoPickup[8], 16);
                             Toggle("AutoPickup Timed Explosive", ref _autoPickup[9], 16);
-                            Toggle("AutoPickup Mine", ref _autoPickup[10], 16); 
-
-
+                            Toggle("AutoPickup Mine", ref _autoPickup[10], 16);
                             GUILayout.EndVertical();
                         });
                         break;
