@@ -1,4 +1,4 @@
-﻿using static LastDesirePro.Menu.CFG.MiscConfig;
+using static LastDesirePro.Menu.CFG.MiscConfig;
 using UnityEngine;
 using LastDesirePro.Main.Visuals;
 using static LastDesirePro.DrawMenu.Prefab;
@@ -13,11 +13,9 @@ namespace LastDesirePro.Menu.MenuTab
     internal class Misc
     {
         public static Vector2 _Weapon, _Weapon1, _Movement, _Movement1, _Misc, _Misc1;
-         
         public static int tab = 0;
         public static string[] tb = new string[] { "Weapon", "Movement", "Misc" };
         public static bool key,key1, key2, key3, key4, key5, key6, key7, key8, key9;
-
         public static Vector3 marker;
         public static string _nameMarkers;
         public static string _nameMarker = "Num 1";
@@ -26,7 +24,6 @@ namespace LastDesirePro.Menu.MenuTab
             tab = Tab(23, 60, 200, 100, tb, tab, 266);
             switch (tab)
             { 
-
                 case 0:
                     { 
                         ScrollViewMenu(new Rect(15, 85, 370, 415), ref _Weapon, () =>
@@ -188,7 +185,6 @@ namespace LastDesirePro.Menu.MenuTab
                             Toggle("Field Of View", ref Menu.CFG.AutomaticConfig._fieldOfView, 16);
                             if(CFG.AutomaticConfig._fieldOfView)
                                 Slider(0f, 35f, ref CFG.AutomaticConfig._fieldOfViewRadius, 200, $"{string.Format("FOV: {0:0.#}", CFG.AutomaticConfig._fieldOfViewRadius)}.");
-
                             GUILayout.EndVertical();
                         });
                         break;
@@ -202,11 +198,9 @@ namespace LastDesirePro.Menu.MenuTab
                             Toggle("Hit Logs", ref _hitLog, 16, _ColorHitLog, true, 94);
                             if (_hitLog)
                                 Slider(0f, 10f, ref _hitLogTime, 200, $"{string.Format("Time Hit Log: {0:0.#}", _hitLogTime)}.");
-
                             Toggle("Hit Marker", ref _hitMarker, 16, _hitMarkerColor, true, 97);
                             if(_hitMarker)
                                 if(Button("Default Color", 111)) _hitMarkerColor = new Color32(150, 98, 239, 255);
-
                             Toggle("Hit Sound", ref _hitSound, 16);
                             if (_hitSound)
                             {
@@ -230,14 +224,12 @@ namespace LastDesirePro.Menu.MenuTab
                                 if (Button("Check Sound", 111)) Others.playSound();
                             }
                             Toggle("Move Line", ref _MoveLine, 16); 
-
                             GUILayout.EndVertical();
                         });
                         ScrollViewMenu(new Rect(395, 85, 370, 415), ref _Misc1, () =>
                         {
                             GUILayout.BeginVertical(GUILayout.Width(180));
                             GUILayout.Space(5f);
-
                             Toggle("Printing", ref _print, 16);
                             if (_print)
                             {
