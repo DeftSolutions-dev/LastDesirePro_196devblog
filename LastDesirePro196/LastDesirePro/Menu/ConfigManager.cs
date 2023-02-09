@@ -53,9 +53,9 @@ namespace LastDesirePro.Menu
 			File.WriteAllText(ConfigPath, JsonConvert.SerializeObject(Config, Formatting.Indented));
 		public static void LoadConfig(Dictionary<string, object> Config)
 		{
-			foreach (Type AssemblyType in Assembly.GetExecutingAssembly().GetTypes())
+			foreach (var AssemblyType in Assembly.GetExecutingAssembly().GetTypes())
 			{
-				foreach (FieldInfo FInfo in AssemblyType.GetFields()
+				foreach (var FInfo in AssemblyType.GetFields()
 					.Where(f => Attribute.IsDefined(f, typeof(SaveAttribute)))
 				)
 				{
