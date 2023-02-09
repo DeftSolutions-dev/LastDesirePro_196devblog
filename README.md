@@ -5,7 +5,7 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).
 
 ### Features
 <details>
-<summary>Features of the cheat are as follows:</summary>
+<summary>(Clik me)Features of the cheat are as follows:</summary>
 <br>
 - ESP Players
   <br>
