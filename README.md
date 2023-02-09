@@ -17,7 +17,7 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 <details>
  <summary>(Clik me)Features of the cheat are as follows:</summary>
 <br>
-<size=20>- ESP Players</size>
+- ESP Players
 <br>
 [+] Players
 <br>
