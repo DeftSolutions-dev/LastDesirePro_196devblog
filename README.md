@@ -9,10 +9,10 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).
 <br>
 - ESP Players
   <br>
-  - Players
+[+] Players
   <br>
-  - Distance
+[+] Distance
   <br>
-  - Held Items
+[+] Held Items
 <br>
 </details>
