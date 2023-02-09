@@ -1,4 +1,4 @@
-﻿using static LastDesirePro.Menu.CFG.MiscConfig;
+using static LastDesirePro.Menu.CFG.MiscConfig;
 using LastDesirePro.Menu.CFG;
 using UnityEngine;
 using LastDesirePro.Main.Visuals;
@@ -28,7 +28,6 @@ namespace LastDesirePro.Menu.MenuTab
             ScrollViewMenu(new Rect(15, 60, 750, 440), ref _Other, () =>
             {
                 GUILayout.BeginVertical(GUILayout.Width(180)); GUILayout.Space(5f);
-
                 _menuKey = Bind(_menuKey, "Menu Key: ", ref key);
                 Toggle("BackGround Menu", ref _backGroundMenu, 16);
                 Toggle("Connect the YRS", ref _yrs, 16);
