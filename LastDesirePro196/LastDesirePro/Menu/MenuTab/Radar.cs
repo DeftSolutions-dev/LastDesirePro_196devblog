@@ -18,7 +18,6 @@ namespace LastDesirePro.Menu.MenuTab
                 Toggle("Radar Enabled", ref _Enabled, 16);
                 Toggle("Radar Players", ref _Players, 16, _colorPlayers, true, 79);
                 Toggle("Radar NPC", ref _Npc, 16, _colorNPC, true, 80);
-
                 Toggle("Ass Indicator Players", ref _OOFIndicator, 16, _colorOOFIndicator, true, 87);
                 Toggle("Ass Indicator NPC", ref _OOFIndicatorNPC, 16, _colorOOFIndicatorNPC, true, 88);
                 GUILayout.Space(5f);
