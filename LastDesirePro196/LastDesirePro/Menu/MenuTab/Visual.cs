@@ -19,27 +19,13 @@ namespace LastDesirePro.Menu.MenuTab
             tab = Tab(23, 60, 133, 100, tb, tab, 150);
             switch (tab)
             {
-                case 10:
-                    ScrollViewMenu(new Rect(15, 85, 750, 415), ref _Animals, () =>
-                    { 
-                        GUILayout.Space(15f); 
-                        Slider(0, 111, ref Main.Automatic.Automatic.f, 700, $"{string.Format("{0:0.###}", (float)Main.Automatic.Automatic.f)}");
-                        GUILayout.Space(15f);
-                        Slider(0, 111, ref Main.Automatic.Automatic.ff, 700, $"children {string.Format("{0:0.###}", (float)Main.Automatic.Automatic.ff)}");
-                        GUILayout.Space(15f);
-                        Slider(0, 111, ref Main.Automatic.Automatic.fff, 700, $" {string.Format("{0:0.###}", (float)Main.Automatic.Automatic.fff)}");
-                        GUILayout.Space(15f);
-                        Slider(0, 111, ref Main.Automatic.Automatic.ffff, 700, $" {string.Format("{0:0.###}", (float)Main.Automatic.Automatic.ffff)}");
-                        GUILayout.Space(15f);
-                    });
-                    break;
-
                 case 0:
                     { 
                         GUIContent[] boxInt = {  };
                         ScrollViewMenu(new Rect(15, 85, 375, 415), ref _Players, () =>
-                        { GUILayout.BeginVertical(GUILayout.Width(180)); GUILayout.Space(5f);
-                             
+                        { 
+                            GUILayout.BeginVertical(GUILayout.Width(180)); 
+                            GUILayout.Space(5f);
                             Toggle("Players", ref _players[0], 16, _colorPlayers,true,1); 
                             if (_players[0])
                             { 
@@ -111,10 +97,6 @@ namespace LastDesirePro.Menu.MenuTab
                                 GUILayout.Space(380f);
                                 Slider(0, 500, ref _dis, 190, $"{(int)_dis} m.");
                                 GUILayout.Space(10f);
-
-
-
-
                                 GUILayout.EndVertical();
                             });
                         }
@@ -126,7 +108,6 @@ namespace LastDesirePro.Menu.MenuTab
                         {
                             GUILayout.BeginVertical(GUILayout.Width(180));
                             GUILayout.Space(5f);
-
                             Toggle("Stag", ref _animals[0], 16, _colorAnimals[0], true, 8);
                             Toggle("Wolf", ref _animals[1], 16, _colorAnimals[1], true, 9);
                             Toggle("Horse", ref _animals[2], 16, _colorAnimals[2], true, 10);
@@ -273,7 +254,6 @@ namespace LastDesirePro.Menu.MenuTab
                             }
                             GUILayout.EndVertical(); 
                         });
-
                         break;
                     }
                 case 4:
@@ -334,12 +314,6 @@ namespace LastDesirePro.Menu.MenuTab
                             GUILayout.EndVertical(); 
                             Slider(0, 5f, ref _radiusFonStorage, 200, $"Background rounding:  {string.Format("{0:0.#}", (float)_radiusFonStorage)}"); 
                             Slider(0, 500, ref _StorageDist, 200, $"{(int)_StorageDist} m.");
-                           /* if (Button("Reload", 90))
-                            {
-                                //if (!Main.Visuals.Others.CoordsVector.Contains(LocalPlayer.Entity.transform.position))
-                                //Main.Visuals.Others.CoordsVector.Add(LocalPlayer.Entity.transform.position); 
-                                Inj.Dump.superdump();
-                            } */
                         });
                         break;
                     }
