@@ -567,6 +567,7 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 **Video**
 
 ![Video](https://www.youtube.com/watch?v=D2-IDBo7ZEE)
+[![Video DesirePro v2]([http://i.imgur.com/pVLW5Yr.png](https://user-images.githubusercontent.com/59990384/217901903-b4d806c8-ad61-4560-a4f7-3658b2e0fe4c.png))](https://www.youtube.com/watch?v=PapjDtR0OMY "DesirePro")
 
 ---
 
