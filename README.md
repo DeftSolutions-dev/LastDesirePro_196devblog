@@ -573,9 +573,11 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 <table cellspacing=0>
   <tr>
 If you think that this code is useful and saves you a lot of work, a lot of costs and allows you to sleep much better, then donating a small amount would be very great.
+    <div align="center">
     
 [![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
 
+      </div>
   </tr>
 </table>
 
