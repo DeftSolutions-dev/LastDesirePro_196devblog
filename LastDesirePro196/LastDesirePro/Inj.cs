@@ -29,7 +29,7 @@ namespace LastDesirePro
             try
             {
                 Main.Misc.Misc.cfg.LoadSettings();
-                Inits();// ConfigManager.Init();
+                Inits(); ConfigManager.Init();
 			}
 			catch { }
 		}
