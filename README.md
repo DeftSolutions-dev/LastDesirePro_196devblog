@@ -568,14 +568,11 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 [![Video DesirePro v2](https://user-images.githubusercontent.com/59990384/217901903-b4d806c8-ad61-4560-a4f7-3658b2e0fe4c.png)](https://youtu.be/D2-lDBo7ZEE"DesirePro")
 
 ---
-## Donations
+## Donate with [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
 
 <table cellspacing=0>
   <tr>
-    ### Donate with [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
-
 If you think that this code is useful and saves you a lot of work, a lot of costs and allows you to sleep much better, then donating a small amount would be very great.
-
 [![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
 
   </tr>
