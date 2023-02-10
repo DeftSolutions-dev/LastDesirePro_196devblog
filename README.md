@@ -569,20 +569,15 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 
 ---
 ## Donations
-If you like this project and want to support further development please consider making a [donation](docs/Donations.md).  
-<form action="https://www.paypal.com/donate" method="post" target="_top">
-<input type="hidden" name="hosted_button_id" value="MMXPPRYRAV92J" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
 
 <table cellspacing=0>
   <tr>
-    <td align=center width=200><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MMXPPRYRAV92J&lc=US&item_name=DIY%20Multiprotocol&currency_code=USD&amount=5&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="docs/images/donate_button.png" border="0" name="submit" title="PayPal - Donate $5" alt="Donate $5"/></a><br><b>$5</b></td>
-    <td align=center width=200><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MMXPPRYRAV92J&lc=US&item_name=DIY%20Multiprotocol&currency_code=USD&amount=10&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="docs/images/donate_button.png" border="0" name="submit" title="PayPal - Donate $10" alt="Donate $10"/></a><br><b>$10</b></td>
-    <td align=center width=200><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MMXPPRYRAV92J&lc=US&item_name=DIY%20Multiprotocol&currency_code=USD&amount=15&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="docs/images/donate_button.png" border="0" name="submit" title="PayPal - Donate $15" alt="Donate $15"/></a><br><b>$15</b></td>
-    <td align=center width=200><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MMXPPRYRAV92J&lc=US&item_name=DIY%20Multiprotocol&currency_code=USD&amount=25&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="docs/images/donate_button.png" border="0" name="submit" title="PayPal - Donate $25" alt="Donate $25"/></a><br><b>$25</b></td>
-    <td align=center width=200><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=MMXPPRYRAV92J&lc=US&item_name=DIY%20Multiprotocol&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="docs/images/donate_button.png" border="0" name="submit" title="PayPal - Donate" alt="Donate"/></a><br><b>Other</b></td>
+    ### Donate with [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
+
+If you think that this code is useful and saves you a lot of work, a lot of costs and allows you to sleep much better, then donating a small amount would be very great.
+
+[![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
+
   </tr>
 </table>
 
