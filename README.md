@@ -17,6 +17,9 @@ You will not be able to use it on the licensed version of the game.
 To get the DLL, you need to compile the code using Visual Studio.
 Then with the help of [MonoInjector](https://github.com/Michidu/MonoInjector) introduce into the game process.
 
+[You can also download the release and follow the instructions.](https://github.com/DeftSolutions-dev/LastDesirePro_196devblog/releases/tag/2.1 "bruh")
+ 
+
 #### Example:
 `MonoInjector.exe --target RustClient.exe --dll <the path on disk to your DLL, without using krill> --namespace LastDesirePro --class Inj --method EnterModule`
 
@@ -24,7 +27,7 @@ Then with the help of [MonoInjector](https://github.com/Michidu/MonoInjector) in
 
 `MonoInjector.exe -t RustClient.exe -d <the path on disk to your DLL, without using krill> -n LastDesirePro -c Inj -m EnterModule`
 
-Code developer:   [HE](https://t.me/devilLucifer69 "bruh")
+Code developer:   [I'M](https://t.me/devilLucifer69 "bruh")
 
 ### Features
 <details>
