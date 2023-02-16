@@ -1,6 +1,6 @@
 
 <div align="center">
-  
+  Please dont be stupid enough to sell this.
 ![image](https://user-images.githubusercontent.com/59990384/217894647-65a9c489-69b5-4656-a418-870fd7bd8a8b.png)
 LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 <div align="center">
