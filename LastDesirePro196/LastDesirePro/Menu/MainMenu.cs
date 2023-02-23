@@ -27,12 +27,12 @@ namespace LastDesirePro.Menu {
       if (_cross) {
         switch (_crossList) {
         case 0:
-          FullDrawing.Line(new Vector2(Screen.width / 2 f - 3 f, Screen.height / 2 f), new Vector2(Screen.width / 2 f - 13 f, Screen.height / 2 f), Color.white, 1.5 f, true);
-          Drawing.RectFilled(new Rect(Screen.width / 2 f, Screen.height / 2 f, 2, 2), Color.red, 111 f);
-          FullDrawing.Line(new Vector2(Screen.width / 2 f + 5 f, Screen.height / 2 f), new Vector2(Screen.width / 2 f + 15 f, Screen.height / 2 f), Color.white, 1.5 f, true);
+          FullDrawing.Line(new Vector2(Screen.width / 2f - 3f, Screen.height / 2f), new Vector2(Screen.width / 2f - 13f, Screen.height / 2f), Color.white, 1.5f, true);
+          Drawing.RectFilled(new Rect(Screen.width / 2f, Screen.height / 2f, 2, 2), Color.red, 111f);
+          FullDrawing.Line(new Vector2(Screen.width / 2f + 5f, Screen.height / 2f), new Vector2(Screen.width / 2f + 15f, Screen.height / 2f), Color.white, 1.5f, true);
           break;
         case 1:
-          Main.Visuals.FullDrawing.Swastika(Screen.width / 2 f, Screen.height / 2 f, rotation_degree, color);
+          Main.Visuals.FullDrawing.Swastika(Screen.width / 2f, Screen.height / 2f, rotation_degree, color);
           break;
         }
       }
@@ -40,32 +40,32 @@ namespace LastDesirePro.Menu {
     private IEnumerator Radius1() {
       while (true) {
         if (DrawMenu.AssetsLoad.Loaded) {
-          if (rotation_degree > 89 f)
-            rotation_degree = 0 f;
-          rotation_degree += LocalPlayer.Entity != null ? 2 f : 0.5 f;
+          if (rotation_degree > 89f)
+            rotation_degree = 0f;
+          rotation_degree += LocalPlayer.Entity != null ? 2f : 0.5f;
         }
         if (DrawMenu.AssetsLoad.Loaded) {
-          if (rotationdegree > 89 f)
-            rotationdegree = 0 f;
-          rotationdegree += LocalPlayer.Entity != null ? 3 f : 1 f;
+          if (rotationdegree > 89f)
+            rotationdegree = 0f;
+          rotationdegree += LocalPlayer.Entity != null ? 3f : 1f;
         }
         yield
-        return new WaitForSeconds(0 f);
+        return new WaitForSeconds(0f);
       }
     }
     public void Log() {
       if (DrawMenu.AssetsLoad.Loaded && !log) {
         Main.Visuals.Others.HitLogs.Add("<color=red>" +
-          $ "Bind the MENU - <color=green>{Menu.CFG.MiscConfig._menuKey.ToString()}</color>.\n" +
+          $"Bind the MENU - <color=green>{Menu.CFG.MiscConfig._menuKey.ToString()}</color>.\n" +
           "Желательно настроить в главном меню, и сохранить конфиг.\n" +
           "Любые вопросы, пишите администрации." +
-          "</color>", 20 f);
+          "</color>", 20f);
         log = true;
       }
     }
     public static bool log = false;
-    public static float rotation_degree = 0 f;
-    public static float rotationdegree = 0 f;
+    public static float rotation_degree = 0f;
+    public static float rotationdegree = 0f;
     void Update() {
       Log();
       if (Input.GetKeyDown(Menu.CFG.MiscConfig._menuKey))
@@ -79,14 +79,14 @@ namespace LastDesirePro.Menu {
       MainTab.DoTab();
       GUI.DragWindow();
     }
-    RainbowColor rainbow = new RainbowColor(0.10 f);
+    RainbowColor rainbow = new RainbowColor(0.10f);
     public static UnityEngine.Color color;
     public class RainbowColor {
       private UnityEngine.Color color;
       public float Speed;
-      public RainbowColor(float speed = 0.25 f) {
+      public RainbowColor(float speed = 0.25f) {
         Speed = speed;
-        color = UnityEngine.Color.HSVToRGB(.34 f, .84 f, .67 f);
+        color = UnityEngine.Color.HSVToRGB(.34f, .84f, .67f);
       }
       public UnityEngine.Color GetColor() {
         UnityEngine.Color.RGBToHSV(color, out float h, out float s, out float v);
