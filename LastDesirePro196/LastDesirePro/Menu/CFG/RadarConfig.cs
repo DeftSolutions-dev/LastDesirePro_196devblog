@@ -19,12 +19,12 @@ namespace LastDesirePro.Menu.CFG
         [Save]
         public static bool[] _animals = new bool[]
                 {
-            false,                                             //Stag
-            false,                                             //Wolf
-            false,                                             //Horse
-            false,                                             //Chicken
-            false,                                             //Bear
-            false                                              //Boar
+            false, //Stag
+            false, //Wolf
+            false, //Horse
+            false, //Chicken
+            false, //Bear
+            false //Boar
                 };
 
 

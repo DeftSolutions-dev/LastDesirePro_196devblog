@@ -582,14 +582,14 @@ namespace LastDesirePro.Main.Misc
         private static List<Assembly> assemblies = new List<Assembly>();
         public static Assembly[] GetAssemblies()
         {
-            var currentAssembly = Assembly.GetExecutingAssembly();
+            Assembly currentAssembly = Assembly.GetExecutingAssembly();
             if (assemblies.Contains(currentAssembly))
                 assemblies.Remove(currentAssembly);
             return assemblies.ToArray();
         }
     }
 }
-public class HookManager // credit: https://github.com/wledfor2/PlayHooky
+public class HookManager
 {
     internal class Natives
     {
