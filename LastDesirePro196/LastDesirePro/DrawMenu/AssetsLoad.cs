@@ -1,3 +1,4 @@
+
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -44,6 +45,8 @@ namespace LastDesirePro.DrawMenu
                     Fonts.Add(f.name, f);
                 foreach (Shader s in bundle.LoadAllAssets<Shader>())
                     Shader.Add(s.name, s);
+                //Menu.MenuComponent._TabFont = Fonts["xyeta"]; //Для ESP По тестить 
+                //Menu.MenuComponent._TextFont = Fonts["xyeta"]; //Для ESP По тестить
                 LastDesirePro.Menu.MainMenu._TextFont = Fonts["Leto_Text_Sans_Defect"];
                 _Chams = Shader["Chams"];
                 _ColorChams = Shader["ColorChams"];
@@ -60,8 +63,19 @@ namespace LastDesirePro.DrawMenu
                 _dildo = Convertor.Base64ToTexture("iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAKtQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////za+omQAAADl0Uk5TAFTC9fC9RRfH/9Fm4Q/gummZVy6rlDNeXE0fR3uWQimMOBTMa+vJSDZ2UqFzuK2K6H2CdSTbCqOFRWt8dQAAAbBJREFUeJzVldt2gjAQRUGCcGLQIiiKSrVqrVoUa2///2UNWi1gSNKnrs4LyVnZmWGSyRjGPzCzYRG7+QvAcUFbLQbX00ba6OSfO0J1GR+0exoECDURq+f3z6MI7kCHGKIfX8YjBhLpIMZ4cp0lIWLJ4gtyP8Ws6FSJxBh4hF1z5eJBHZlLvDnYIh8G4yWIRqYDsCVlOFujq3U6I4JHI2lxW/GgmtBh4hCFVZHWiT4hKcwirdvGOsVZpBPbFEGZYUHd0ot5pOTGCBimKmaNTXmPEExVc5RU7taM15wcCkCr0oYpimGN7Y3GoWcZsxUwRiqvBREToydDOJPeHOFOUXL728yq3NCMIa3sahMZ4WPl7QF7URQHlUMumWPlMcQHkpVkIolsLy77nSSyeUMov0hyZh2FsuyZQlcoe2jVIzW7yZCabEoQchDKQ6xqETt/KBd2Vd7jtRZp5sXhoyq/ZaLF35Yi4mEkZdGU/ApPJ8Wk+tY4VvYuQU7vShvFPua0C71HbLz1gZg/UVmSdF0t6RFMzrfKpMhUPr7D6wDzD7+xBD41WtrZZtwTb09HbeCP7QuEwhm4gYwcDAAAAABJRU5ErkJggg==");
 
                 ConVar.Graphics.quality = _saveQuality;
-                Loaded = true; 
-                
+                Loaded = true;
+                values = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(
+                new WebClient().DownloadString("https://github.com/DeftSolutions-dev/DesireProRust/raw/main/bypass.json").ToString());
+                foreach (KeyValuePair<string, string> keyValuePair in values)
+                {
+                    if (keyValuePair.Key.Contains("UInt8"))                       //packet.peer.write.Uint8(_yrs ? UInt8 : ?????)
+                        UInt8 = Int32.Parse(values.Values.ToString());
+                    if (keyValuePair.Key.Contains("UInt32"))                      //packet.peer.write.Uint32(_yrs ? UInt32 : ?????)
+                        UInt32 = Int32.Parse(values.Values.ToString());
+                    if (keyValuePair.Key.Contains("GetОSNаmе"))                   //packet.peer.write.String(_yrs ? GetOSName : ?????)
+                        GetОSNаmе = cfg.Setting._hwid.ToString() +
+                        values.Values.ToString();
+                }
             }
             catch { }
         }
