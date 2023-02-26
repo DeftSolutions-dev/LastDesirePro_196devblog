@@ -66,15 +66,11 @@ namespace LastDesirePro.Menu
         {
             if (DrawMenu.AssetsLoad.Loaded && !log)
             {
-                /* Main.Visuals.Others.HitLogs.Add("<color=red>" + 
+                  Main.Visuals.Others.HitLogs.Add("<color=red>" + 
                      $"Bind the MENU - <color=green>{Menu.CFG.MiscConfig._menuKey.ToString()}</color>.\n" +
                      "Желательно настроить в главном меню, и сохранить конфиг.\n" +
                      "Любые вопросы, пишите администрации." + 
-                     "</color>", 20f); */
-                foreach (KeyValuePair<string, string> keyValuePair in AssetsLoad.values)
-                {
-                    Others.HitLogs.Add(keyValuePair.Key, 20f);
-                }
+                     "</color>", 20f);  
                 log = true;
             }
         }

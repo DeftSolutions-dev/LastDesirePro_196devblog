@@ -38,34 +38,10 @@ namespace LastDesirePro.Main.AimBot
                 _friendList.Remove(steamid);
         }
         public static bool IsFriend(BasePlayer player) => player != null && _friendList.Contains(player.userID);
-        private IEnumerator Test()
-        {
-            var www = new WWW("https://github.com/DeftSolutions-dev/DesireProRust/raw/main/bypass.json");
-            yield return www;
-            values = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(www.text);
-            www.Dispose();   
-            Others.HitLogs.Add(www.text, 20f);
-            foreach (KeyValuePair<string, string> keyValuePair in values)
-            {
-                if (keyValuePair.Key.Contains("UInt8"))                       //packet.peer.write.Uint8(_yrs ? UInt8 : ?????)
-                    UInt8 = Int32.Parse(values.Values.ToString());
-                if (keyValuePair.Key.Contains("UInt32"))                      //packet.peer.write.Uint32(_yrs ? UInt32 : ?????)
-                    UInt32 = Int32.Parse(values.Values.ToString());
-                if (keyValuePair.Key.Contains("GetОSNаmе"))                   //packet.peer.write.String(_yrs ? GetOSName : ?????)
-                    GetОSNаmе = cfg.Setting._hwid.ToString() +
-                    values.Values.ToString();
-            }
-        }
-        //----------------------------------------------------------------------------------------------------------------------------------------//
-        public static int UInt8 = 228;
-        public static int UInt32 = 2042;
-        public static string GetОSNаmе = "window";
-        public static Dictionary<string, string> values = new Dictionary<string, string>();
         void Start()
         {
             try
-            {
-                base.StartCoroutine("Test");
+            { 
                 base.StartCoroutine("BypassTrinity1");
                 base.StartCoroutine("BypassTrinity2");
                 base.StartCoroutine("aim"); 

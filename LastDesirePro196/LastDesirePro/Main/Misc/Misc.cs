@@ -377,11 +377,11 @@ namespace LastDesirePro.Main.Misc
             if (packet.peer.write.Start())
             {
                 packet.peer.write.PacketID(Message.Type.GiveUserInformation);
-                packet.peer.write.UInt8(_yrs ? (byte)AssetsLoad.UInt8 : (byte)228);
+                packet.peer.write.UInt8(_yrs ? (byte)238 : (byte)228);
                 packet.peer.write.UInt64(Client.Steam.SteamId);
-                packet.peer.write.UInt32(_yrs ? (uint)AssetsLoad.UInt32 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")));
-                packet.peer.write.String(_yrs ? AssetsLoad.GetОSNаmе : "window");
-                packet.peer.write.String(global::Client.Steam.Username);
+                packet.peer.write.UInt32(_yrs ? (uint)23432 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")));
+                packet.peer.write.String(_yrs ? "" : "window");
+                packet.peer.write.String(Client.Steam.Username);
                 packet.peer.write.String(SteamUtil.betaBranch);
                 Facepunch.Steamworks.Auth.Ticket ticket = GetComponent<Client>().GetAuthTicket();
                 if (ticket == null)
@@ -399,7 +399,7 @@ namespace LastDesirePro.Main.Misc
         protected void EncryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset)
         {
             if (connection.encryptionLevel <= 1U) 
-                Craptography.XOR(_yrs ? (uint)AssetsLoad.UInt32 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")), src, srcOffset, dst, dstOffset);
+                Craptography.XOR(_yrs ? (uint)2342 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")), src, srcOffset, dst, dstOffset);
             else
                 EAC.Encrypt(connection, src, srcOffset, dst, dstOffset);
         }
@@ -407,7 +407,7 @@ namespace LastDesirePro.Main.Misc
         protected void DecryptionHandler(Connection connection, MemoryStream src, int srcOffset, MemoryStream dst, int dstOffset)
         {
             if (connection.encryptionLevel <= 1U) 
-                Craptography.XOR(_yrs ? (uint)AssetsLoad.UInt32 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")), src, srcOffset, dst, dstOffset); 
+                Craptography.XOR(_yrs ? (uint)42342 : (uint)Convert.ToUInt32(ServerBrowserList.VersionTag.Replace("v", "")), src, srcOffset, dst, dstOffset); 
             else 
                 EAC.Decrypt(connection, src, srcOffset, dst, dstOffset);
         }
