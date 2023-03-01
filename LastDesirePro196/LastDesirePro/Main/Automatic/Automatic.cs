@@ -974,6 +974,7 @@ namespace LastDesirePro.Main.Automatic
             playerWalkMovement.groundAngleNew = float.MaxValue;
             playerWalkMovement.groundNormalNew = Vector3.up;
              
+            playerWalkMovement.capsule.radius = _spider ? 0.44f: 0.5f;
             //var speed = (playerWalkMovement.swimming /*swim*/ || playerWalkMovement.GetForcedDuck() /* crouch */ > 0.5f) ? 1.7f : (playerWalkMovement.jumping /*jump*/ ? 6f : 5.5f);
             if (_farmBot[0] && _Resources.Count > 0)
             { 
