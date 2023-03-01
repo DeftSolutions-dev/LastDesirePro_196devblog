@@ -14,6 +14,7 @@ using UnityEngine;
 using static LastDesirePro.Main.Objects.ObjectsCheck;
 using static LastDesirePro.Main.Visuals.Others;
 using static LastDesirePro.Menu.CFG.AutomaticConfig;
+using static LastDesirePro.Menu.CFG.MiscConfig;
 
 namespace LastDesirePro.Main.Automatic
 {
