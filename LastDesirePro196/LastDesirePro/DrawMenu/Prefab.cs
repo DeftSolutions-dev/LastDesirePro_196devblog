@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -431,65 +431,85 @@ namespace LastDesirePro.DrawMenu
             }
             return list;
         }
+       public static
+             Texture2D fuf1, fuf2, fuf3, fuf4, fuf5, fuf6 = new Texture2D(1,1);
+        public static
+            GUIStyle guixyi, guixyi1 = new GUIStyle();
         public static int MainTab(float x, float y, float w, float h, string[] text, int list, float WH = 137)
         {
             for (int i = 0; i < text.Length; i++)
             {
 
                 Rect area = new Rect(x + (i * WH), y, w, h); 
-                GUIStyle f = new GUIStyle();
-                f.alignment = TextAnchor.MiddleCenter;
-                f.font = LastDesirePro.Menu.MainMenu._TextFont;
-                f.fontSize = 25;
-                f.padding.left = f.padding.right = f.padding.top = f.padding.bottom = 4;
+                    guixyi = new GUIStyle();
+                    guixyi.alignment = TextAnchor.MiddleCenter;
+                    guixyi.font = LastDesirePro.Menu.MainMenu._TextFont;
+                    guixyi.fontSize = 25;
+                    guixyi.padding.left = guixyi.padding.right = guixyi.padding.top = guixyi.padding.bottom = 4;
 
-                f.normal.textColor = new Color32(210, 210, 210, 255);
-                f.onNormal.textColor = new Color32(210, 210, 210, 255);
-                f.hover.textColor = new Color32(150, 98, 239, 255);
-                f.onHover.textColor = new Color32(150, 98, 239, 255);
-                f.active.textColor = new Color32(100, 100, 100, 255);
-                f.onActive.textColor = new Color32(100, 100, 100, 255);
+                    guixyi.normal.textColor = new Color32(210, 210, 210, 255);
+                    guixyi.onNormal.textColor = new Color32(210, 210, 210, 255);
+                    guixyi.hover.textColor = new Color32(150, 98, 239, 255);
+                    guixyi.onHover.textColor = new Color32(150, 98, 239, 255);
+                    guixyi.active.textColor = new Color32(100, 100, 100, 255);
+                    guixyi.onActive.textColor = new Color32(100, 100, 100, 255);
+                    if (fuf1 == null)
+                    {
+                        fuf1 = new Texture2D(1, 1);
+                        fuf1.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf1.Apply();
+                    }
+                    guixyi.hover.background = fuf1;
+                    if (fuf2 == null)
+                    {
+                        fuf2 = new Texture2D(1, 1);
+                        fuf2.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf2.Apply();
+                    }
+                    guixyi.normal.background = fuf2;
+                    if (fuf3 == null)
+                    {
+                        fuf3 = new Texture2D(1, 1);
+                        fuf3.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf3.Apply();
+                    }
+                    guixyi.active.background = fuf3;
+                    guixyi1 = new GUIStyle();
+                    guixyi1.alignment = TextAnchor.MiddleCenter;
+                    guixyi1.font = LastDesirePro.Menu.MainMenu._TextFont;
+                    guixyi1.fontSize = 25;
+                    guixyi1.padding.left = guixyi1.padding.right = guixyi1.padding.top = guixyi1.padding.bottom = 4;
 
-                var btex = new Texture2D(1, 1);
-                btex.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex.Apply();
-                f.hover.background = btex;
-                var btex2 = new Texture2D(1, 1);
-                btex2.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex2.Apply();
-                f.normal.background = btex2;
-                var btex3 = new Texture2D(1, 1);
-                btex3.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex3.Apply();
-                f.active.background = btex3;  
+                    guixyi1.normal.textColor = new Color32(150, 98, 239, 255);
+                    guixyi1.onNormal.textColor = new Color32(150, 98, 239, 255);
+                    guixyi1.hover.textColor = new Color32(162, 105, 246, 255);
+                    guixyi1.onHover.textColor = new Color32(162, 105, 246, 255);
+                    guixyi1.active.textColor = new Color32(162, 105, 246, 255);
+                    guixyi1.onActive.textColor = new Color32(162, 105, 246, 255);
 
-
-                GUIStyle f1 = new GUIStyle();
-                f1.alignment = TextAnchor.MiddleCenter;
-                f1.font = LastDesirePro.Menu.MainMenu._TextFont;
-                f1.fontSize = 25;
-                f1.padding.left = f1.padding.right = f1.padding.top = f1.padding.bottom = 4;
-
-                f1.normal.textColor = new Color32(150, 98, 239, 255);
-                f1.onNormal.textColor = new Color32(150, 98, 239, 255);
-                f1.hover.textColor = new Color32(162, 105, 246, 255);
-                f1.onHover.textColor = new Color32(162, 105, 246, 255);
-                f1.active.textColor = new Color32(162, 105, 246, 255);
-                f1.onActive.textColor = new Color32(162, 105, 246, 255);
-
-                var btex1 = new Texture2D(1, 1);
-                btex1.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex1.Apply();
-                f1.hover.background = btex1;
-                var btex21 = new Texture2D(1, 1);
-                btex21.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex21.Apply();
-                f1.normal.background = btex21;
-                var btex31 = new Texture2D(1, 1);
-                btex31.SetPixel(0, 0, new Color32(0, 0, 0, 0));
-                btex31.Apply();
-                f1.active.background = btex31; 
-                if (GUI.Button(area, text[i], list == i ?f1 : f))
+                    if (fuf4 == null)
+                    {
+                        fuf4 = new Texture2D(1, 1);
+                        fuf4.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf4.Apply();
+                    }
+                    guixyi1.hover.background = fuf4;
+                    if (fuf5 == null)
+                    {
+                        fuf5 = new Texture2D(1, 1);
+                        fuf5.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf5.Apply();
+                    }
+                    guixyi1.normal.background = fuf5;
+                    if (fuf6 == null)
+                    {
+                        fuf6 = new Texture2D(1, 1);
+                        fuf6.SetPixel(0, 0, new Color32(0, 0, 0, 0));
+                        fuf6.Apply();
+                    }
+                    guixyi1.active.background = fuf6;
+                 
+                if (GUI.Button(area, text[i], list == i ? guixyi1 : guixyi))
                 {
                     list = i;
                     ColorPicker.GUIColorPicker.window = false;
