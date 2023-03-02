@@ -1,8 +1,10 @@
-# LastDesirePro_196devblog
+
 <div align="center">
   
 ![image](https://user-images.githubusercontent.com/59990384/217894647-65a9c489-69b5-4656-a418-870fd7bd8a8b.png)
-LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
+LastDesirePro - Rust cheat the 196-198 devblog (Pirate).  
+Please dont be stupid enough to sell this.
+</div>
 <div align="center">
   
 ![ISSUES](https://img.shields.io/github/issues/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
@@ -11,7 +13,23 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 ![LICENCE](https://img.shields.io/github/license/DeftSolutions-dev/LastDesirePro_196devblog?style=for-the-badge)
   
   </div>
-Описание в процессе.
+ 
+This source code is for pirated Rust. 
+You will not be able to use it on the licensed version of the game. 
+To get the DLL, you need to compile the code using Visual Studio.
+Then with the help of [MonoInjector](https://github.com/Michidu/MonoInjector) introduce into the game process.
+
+[You can also download the release and follow the instructions.](https://github.com/DeftSolutions-dev/LastDesirePro_196devblog/releases/tag/2.1 "bruh")
+ 
+
+#### Example:
+`MonoInjector.exe --target RustClient.exe --dll <the path on disk to your DLL, without using krill> --namespace LastDesirePro --class Inj --method EnterModule`
+
+#### Or
+
+`MonoInjector.exe -t RustClient.exe -d <the path on disk to your DLL, without using krill> -n LastDesirePro -c Inj -m EnterModule`
+
+Code developer:   [I'M](https://t.me/devilLucifer69 "bruh")
 
 ### Features
 <details>
@@ -568,6 +586,19 @@ LastDesirePro - Rust cheat the 196-198 devblog (Pirate).   </div>
 [![Video DesirePro v2](https://user-images.githubusercontent.com/59990384/217901903-b4d806c8-ad61-4560-a4f7-3658b2e0fe4c.png)](https://youtu.be/D2-lDBo7ZEE"DesirePro")
 
 ---
+## Donate with [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
+
+<table cellspacing=0>
+  <tr>
+[US]If you think that this code is useful and saves you a lot of work, a lot of costs and allows you to sleep much better. Тhen donating a small amount would be very great.
+    
+[RU]Если вы считаете, что этот код полезен и экономит вам много работы, много затрат и позволяет вам спать намного лучше. То пожертвовать небольшую сумму было бы очень здорово.
+    <div align="center">
+    
+[![Paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MMXPPRYRAV92J)
+
+  </tr>
+</table>
 
 **Copyright** (MIT License)
 
