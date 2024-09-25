@@ -29,7 +29,7 @@ Then with the help of [MonoInjector](https://github.com/Michidu/MonoInjector) in
 
 `MonoInjector.exe -t RustClient.exe -d <the path on disk to your DLL, without using krill> -n LastDesirePro -c Inj -m EnterModule`
 
-Code developer:   [I'M](https://t.me/devilLucifer69 "bruh")
+Code developer:   [I'M](https://t.me/desirepro "bruh")
 
 ### Features
 <details>
